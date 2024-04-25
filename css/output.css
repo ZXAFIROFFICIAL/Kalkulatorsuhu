@@ -1,0 +1,34 @@
+/* output.css */
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333; /* Warna teks default */
+}
+
+.celsius {
+    color: #009688; /* Warna hijau untuk hasil konversi °C - °F */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.fahrenheit {
+    color: #e91e63; /* Warna merah untuk hasil konversi °F - °C */
+    font-style: italic; /* Miringkan teks */
+    text-decoration: underline; /* Garis bawah pada teks */
+}
+
+/* Tambahkan gaya khusus untuk dark mode */
+.dark-mode .result {
+    background-color: #222; /* Warna latar belakang dalam mode gelap */
+    color: #eee; /* Warna teks dalam mode gelap */
+}
+
+.dark-mode .celsius {
+    color: #4caf50; /* Warna hijau terang untuk hasil konversi °C - °F dalam mode gelap */
+}
+
+.dark-mode .fahrenheit {
+    color: #f44336; /* Warna merah terang untuk hasil konversi °F - °C dalam mode gelap */
+}

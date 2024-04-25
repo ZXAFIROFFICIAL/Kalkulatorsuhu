@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi Suhu</h1>
+        <button id="darkModeButton">Dark Mode</button>
+        
+        <div class="input-section">
+            <h2>Input Suhu (Celsius)</h2>
+            <form id="tempForm">
+                <input type="number" id="tempInput" name="tempInput" required>
+                <div class="button-container">
+                    <button type="button" id="convertBtn">Konversi</button>
+                    <button type="button" id="resetBtn">Reset</button>
+                    <button type="button" id="reverseBtn">Balik</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="output-section">
+            <h2>Hasil Konversi °C - °F</h2>
+            <div id="celsiusResult" class="result celsius"></div>
+        </div>
+
+        <div class="output-section">
+            <h2>Hasil Konversi °F - °C</h2>
+            <div id="fahrenheitResult" class="result fahrenheit"></div>
+        </div>
+        
+        <div class="calculation-section">
+            <h2>Metode Perhitungan</h2>
+            <div id="calculationMethod" class="result">Untuk mengonversi suhu dari Celsius ke Fahrenheit, Anda dapat menggunakan rumus berikut: <br>
+            Fahrenheit = (Celsius × 9/5) + 32</div>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+    <script>
+        const darkModeButton = document.getElementById('darkModeButton');
+        const container = document.querySelector('.container');
+
+        darkModeButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            container.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
